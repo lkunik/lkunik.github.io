@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #DBE8BC;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+nav {
+    background: #1F6B27;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background: #145019;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+nav a.active {
+    font-weight: bold;
+    background: #145019;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.nav-title {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1F6B27;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #1F6B27;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.profile {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.cv-download {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.9em;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.publications-list p {
+    margin-bottom: 1.2em;
+}
+
+
+.project-description {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.thru-hike-overview {
+    max-width: 1000px;
+    height: auto;
+    border-radius: 5px;
+    margin: 1.7em auto 0 auto;
+    display: block;
+}
+
+.hike-pix {
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 1.7em auto 0 auto;
+    display: block;
+}
