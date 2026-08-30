@@ -367,6 +367,7 @@ li {
 
     .project-description img {
         margin: 0 auto;
+        order: -1;
     }
 }
 
