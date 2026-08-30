@@ -4,30 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - lkunik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@500;600&family=DM+Serif+Display&family=Cormorant+Garamond:wght@500;600&family=Space+Grotesk:wght@500;600&family=Bricolage+Grotesque&family=Archivo:wght@500;600&family=IBM+Plex+Sans:wght@500;600&family=Work+Sans:wght@500;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li class="nav-title"><strong>Lewis T. Kunik</strong></li>
+            <li class="nav-title"><a href="index.html"><strong>Lewis Kunik, Ph.D.</strong></a></li>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="thru-hikes.html">Thru-hikes</a></li>
+            <li class="nav-social">
+                <a href="https://scholar.google.com/citations?user=gM2iHhsAAAAJ&hl=en" class="icon-link" aria-label="Google Scholar profile" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3L23 8.5 12 14 1 8.5 12 3Z"/>
+                        <path d="M6.5 10.2V15c0 1.66 2.46 3 5.5 3s5.5-1.34 5.5-3v-4.8L12 12.7 6.5 10.2Z"/>
+                        <path d="M21 9v6.2a1 1 0 1 1-1.6 0V9.9l1.6-.9Z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/lkunik" class="icon-link" aria-label="GitHub profile" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
-    
+
+    <section class="hero-fullbleed" id="heroFrame">
+        <video class="hero-fullbleed__video is-active" id="heroVidA" muted playsinline preload="auto" poster="videos/hero-fullbleed/DJI_0045.jpg"></video>
+        <video class="hero-fullbleed__video" id="heroVidB" muted playsinline preload="none"></video>
+        <div class="hero-fullbleed__scrim"></div>
+        <div class="hero-fullbleed__content">
+            <div class="hero-fullbleed__eyebrow">EARTH SYSTEM SCIENTIST </div>
+            <h1 class="hero-fullbleed__name">Lewis Kunik, Ph.D.</h1>
+            <p class="hero-fullbleed__tagline">Studying the carbon sink of North American forests with environmental remote sensing.</p>
+            <a href="research.html" class="hero-fullbleed__cta">View my research &rarr;</a>
+        </div>
+        <div class="hero-fullbleed__scroll" aria-hidden="true">
+            <span class="hero-fullbleed__scroll-line"></span>
+            <span class="hero-fullbleed__scroll-label">SCROLL</span>
+        </div>
+    </section>
+
     <main>
-        <h2 style="text-align: center;">Hi! I'm Lewis</h2>
+        <h2 class="intro-heading" style="text-align: center;">Welcome! I'm Lewis</h2>
         
         <figure style="display: inline-block; margin: 0 20px 20px 0; max-width: 200px; float: left;">
             <img src="images/IMG_0572_crop.png" alt="Profile photo" class="profile-photo">
-            <figcaption style="font-size: 0.9em; font-style: italic; color: #444; text-align: center; word-wrap: break-word;">
+            <figcaption style="font-size: 0.9em; font-style: italic; color: #ccc; text-align: center; word-wrap: break-word;">
                 A bearded Lewis hiking through Grand Staircase-Escalante National Monument
             </figcaption>
         </figure>
 
-        <p>I'm an ecosystem ecologist and Earth scientist studying the carbon sink of North American forests. I am also a NASA FINESST and NSF graduate research fellow at the University of Utah, where I am a PhD candidate in the department of Atmospheric Sciences. I use geostatistical methods and high-performance computing to answer big questions about land-atmosphere processes, such as "what is the impact of tree mortality on the terrestrial carbon sink?", "how does drought impact the spectral reflectance of forest canopies?", and "what climatic drivers shape the patterns of photosynthesis in forests?". </p>
+        <p>I'm an ecosystem ecologist and Earth scientist using satellite remote sensing to study the carbon sink of North American forests. I am a Postdoctoral researcher at the University of Utah, where I recently received my PhD supported by NASA FINESST and NSF graduate research fellowships.</p>
+        <!-- add newline characters or space here -->
+        <p>I use a combination of geospatial statistics and high-performance computing to answer big questions about land-atmosphere processes, such as "what is the impact of tree mortality on the terrestrial carbon sink?", "how does drought impact the spectral reflectance of forest canopies?", and "what climatic drivers shape the patterns of photosynthesis in forests?". </p>
         <!-- add newline characters or space here -->
         <p>Before shifting my focus to forest ecosystem monitoring, I developed Bayesian inverse models for optimizing trace gas inventories through collaborations with the <a href="https://gml.noaa.gov/ccgg/carbontracker-lagrange/">CarbonTracker-Lagrange</a> team at NOAA. I also worked as an air quality consultant, supporting air pollution modeling and permitting in Utah and California. </p>
         <!-- add newline characters or space here -->
@@ -37,5 +71,6 @@
     <footer>
         <p>&copy; 2026 Lewis Kunik</p>
     </footer>
+    <script src="hero-crossfade.js" defer></script>
 </body>
 </html>
