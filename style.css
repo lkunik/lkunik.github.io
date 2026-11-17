@@ -134,7 +134,7 @@ section {
 }
 
 .profile-photo {
-    max-width: min(200px, 100%);
+    max-width: min(270px, 100%);
     height: auto;
     border-radius: 5px;
 }
